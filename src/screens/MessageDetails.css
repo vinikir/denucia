@@ -1,0 +1,80 @@
+.details-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .details-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+  }
+  
+  .back-button {
+    
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #646cff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .details-card h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+    padding-right: 30px;
+  }
+  
+  .detail-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .detail-item.full-width {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-label {
+    font-weight: 600;
+    color: #555;
+    margin-right: 10px;
+    min-width: 100px;
+  }
+  
+  .detail-value {
+    color: #333;
+  }
+  
+  .message-content {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border-left: 4px solid #646cff;
+    white-space: pre-wrap;
+    line-height: 1.6;
+  }
+  
+  /* Adicione ao seu MonthlyReport.css */
+  .clickable-row {
+    cursor: pointer;
+  }
+  
+  .clickable-row:hover {
+    background-color: #f0f0f0 !important;
+  }

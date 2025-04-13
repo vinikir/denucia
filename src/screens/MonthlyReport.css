@@ -1,0 +1,136 @@
+.report-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .report-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .report-header h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .filter-group select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 150px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 36px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    background-color: #fde0e0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    max-width: fit-content;
+  }
+  
+  .results {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .no-results, .loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Efeito de transição suave ao navegar entre páginas */
+tr {
+    transition: all 0.3s ease;
+  }
+  
+  /* Destaque para a linha quando estiver carregando os detalhes */
+  .clickable-row.loading-details {
+    pointer-events: none;
+    opacity: 0.7;
+  }
+  
+  /* Indicador de loading para feedback durante o clique */
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  .clickable-row.loading-details td:first-child::before {
+    content: '⌛';
+    animation: pulse 1.5s infinite;
+    opacity: 1;
+  }
